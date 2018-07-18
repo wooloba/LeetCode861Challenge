@@ -2,7 +2,7 @@
 #   Yaozhi Lu      #
 #   Jul 18 2018    #
 ####################
-#test
+
 #Origin: https://leetcode-cn.com/problems/redundant-connection/description/
 
 
