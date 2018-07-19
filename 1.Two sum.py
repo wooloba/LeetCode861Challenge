@@ -2,7 +2,7 @@
 #   Yaozhi Lu      #
 #   Jul 18 2018    #
 ####################
-#Origin:https://leetcode.com/problems/two-sum/description/
+#Origin: https://leetcode.com/problems/two-sum/description/
 
 class Solution(object):
     def twoSum(self, numbers, target):
