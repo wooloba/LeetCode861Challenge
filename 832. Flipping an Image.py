@@ -1,3 +1,8 @@
+####################
+#   Yaozhi Lu      #
+#   Aug 7 2018    #
+####################
+
 class Solution:
     def flipAndInvertImage(self, A):
         """
