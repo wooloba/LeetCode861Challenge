@@ -28,7 +28,7 @@ class Solution(object):
                 dic.pop(temp)
                 if dic == {}:
                     return ''
-                    
+
                 temp1 = max(dic, key=dic.get)
                 if dic[temp1] > 0:
                     res.append(temp1)
@@ -42,7 +42,6 @@ class Solution(object):
                 dic[temp] -= 1
 
         return ''.join(e for e in res)
-
 
 def main():
     A = 'bbbbbb'
