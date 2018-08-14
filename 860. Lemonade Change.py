@@ -36,7 +36,7 @@ class Solution(object):
         return True
 
 def main():
-    A = [5,5,5,10,10,20]
+    A = [5,5,10,10,20]
     so = Solution()
     print(so.lemonadeChange(A))
 
