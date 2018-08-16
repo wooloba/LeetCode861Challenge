@@ -49,6 +49,7 @@ def main():
     tree.left = TreeNode(2)
     tree.right = TreeNode(3)
     tree.left.right = TreeNode(5)
+    tree.left.right.left = TreeNode(7)
     tree.left.left = TreeNode(6)
     
     so = Solution()
