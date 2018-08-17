@@ -1,6 +1,6 @@
 ####################
 #   Yaozhi Lu      #
-#   Aug 14 2018    #
+#   Aug 16 2018    #
 ####################
 
 # Origin: https://leetcode.com/problems/magic-squares-in-grid/description/
