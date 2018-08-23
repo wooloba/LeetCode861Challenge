@@ -3,6 +3,8 @@
 #   Aug 23 2018    #
 ####################
 
+#Origin: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/
+
 """
 # Definition for a Node.
 class Node(object):
