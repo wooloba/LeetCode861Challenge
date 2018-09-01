@@ -24,8 +24,10 @@ class Solution(object):
         largeStart = None
 
         while head != None:
-            print largeEnd.val
             if head.val < x:
+                if smallEnd == None:
+                    smallEnd = head
+
                 if largeStart != None and smallEnd != None:
                     
                     largeEnd.next = head.next
@@ -34,13 +36,12 @@ class Solution(object):
                     smallEnd = head
                     
 
-                elif smallEnd == None:
-                    smallEnd = head
+                
                 
             else:
                 if largeStart == None:
                     largeStart = head
-                    largeStart = head
+                    largeEnd = head
                 else:
                     largeEnd = head
 
@@ -51,18 +52,18 @@ class Solution(object):
 def main():
     so = Solution()
 
-    x = 3
-    A = [1,3,2]
-    head = ListNode(1)
+    x = 2
+    A = [1,1]
+    head = ListNode(2)
     node = head
 
     for i in A:
         node.next = ListNode(i)
         node = node.next
     node.next = None
-    #print(head.next.next.next.next.next.val)
+    #
     node = so.partition(head,x)
-    
+    print(head.val)
 
 if __name__ == '__main__':
     main()
