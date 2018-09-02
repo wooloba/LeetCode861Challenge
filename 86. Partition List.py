@@ -28,16 +28,16 @@ class Solution(object):
                 if smallEnd == None:
                     smallEnd = head
 
+                
                 if largeStart != None and smallEnd != None:
                     
                     largeEnd.next = head.next
                     head.next = largeStart
                     smallEnd.next = head
                     smallEnd = head
-                    
+                    head = largeEnd
 
-                
-                
+                    print smallEnd.val
             else:
                 if largeStart == None:
                     largeStart = head
@@ -53,17 +53,13 @@ def main():
     so = Solution()
 
     x = 2
-    A = [1,1]
+    A = [2,1]
     head = ListNode(2)
-    node = head
-
-    for i in A:
-        node.next = ListNode(i)
-        node = node.next
-    node.next = None
-    #
+    head.next = ListNode(1)
+    
     node = so.partition(head,x)
-    print(head.val)
 
+    #print(head.val)
+    
 if __name__ == '__main__':
     main()
