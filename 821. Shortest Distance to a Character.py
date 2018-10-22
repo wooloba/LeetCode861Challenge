@@ -24,7 +24,7 @@ class Solution(object):
                     leng -= 1
             else:
                 leng += 1
-        print result    
+
 
         result = result[::-1]
         leng = 0
