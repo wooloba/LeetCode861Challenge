@@ -28,18 +28,20 @@ class MapSum(object):
         :rtype: int
         """
         theSum = 0
-        for key,val in self.data:
+        for key,val in self.data.items():
             if key[0:len(prefix)] == prefix:
                 theSum += val
 
         return theSum
 
 
-def if __name__ == "__main__":
-    
+
+def main():
     # Your MapSum object will be instantiated and called as such:
     obj = MapSum()
     obj.insert("apple", 3)
     print(obj.sum('app'))
 
-main()
+
+if __name__ == "__main__":
+    main()
