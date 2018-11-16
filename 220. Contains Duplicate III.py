@@ -14,23 +14,20 @@ class Solution(object):
         :rtype: bool
         """
         
+        #time limit exceed
         dic = dict(zip([i for i in range(0,len(nums))],nums))
-        dic = sorted(dic.items(),key= lambda x:x[1])
-
-
         for i in range(len(dic)-1):
-            if abs(dic[i][1] - dic[i+1][1]) > t:
-                break
             for j in range(i+1,len(dic)):
                 print(i,j)
-                if abs(dic[i][0] - dic[j][0])<= k and abs(dic[i][1] - dic[j][1])<=t and dic[i][1] != dic[j][1]:
+                if abs(i-j) > k:
+                    break
+                if abs(dic[i] - dic[j])<= t:
                     return True
-                
         return False
 
 def main():
     so = Solution()
-    print(so.containsNearbyAlmostDuplicate([-1,-1],1,0))
+    print(so.containsNearbyAlmostDuplicate([1,2,3,1],3,0))
 
 if __name__ == "__main__":
     main()
